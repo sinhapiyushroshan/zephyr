@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Talent Showcase</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #28293d);
+    color: #f0f0f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+  }
+  header {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 30px 0 20px;
+    background: linear-gradient(90deg, #ff416c, #833ab4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  .events-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    width: 100%;
+  }
+  .event-card {
+    background: #383955;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(131, 58, 180, 0.5);
+    flex: 1 1 300px;
+    max-width: 320px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 65, 108, 0.7);
+    background: #4b3a66;
+  }
+  .event-icon {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+    color: #ff416c;
+    filter: drop-shadow(0 0 3px #ff416c7d);
+  }
+  .event-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ff6392;
+  }
+  .event-desc {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #d0cde1;
+    text-align: center;
+  }
+  /* Responsive for mobile */
+  @media (max-width: 600px) {
+    header {
+      font-size: 2.2rem;
+      margin: 20px 0 15px;
+    }
+    .events-container {
+      gap: 18px;
+    }
+    .event-card {
+      max-width: 90vw;
+      padding: 20px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>Dance And Drama Competitions </header>
+<div class="events-container">
+  <div class="event-card" onclick="alert('Group dance!')">
+    <div class="event-icon">💃💃🕺</div>
+<div class="event-title" role="button" tabindex="0" style="background:none; border:none; cursor:pointer;" onclick="window.open('https://forms.gle/X7tViomB53Ae5UWh6', '_blank')">Group Dance</div>
+ <div class="event-desc">
+Dance together, move as one—unite your energy, express your soul, and inspire the world through rhythm and passion.    </div>
+  </div>
+  <div class="event-card" onclick="alert('Solo dance')">
+    <div class="event-icon">💃🕺</div>
+<div class="event-title" role="button" tabindex="0" style="background:none; border:none; cursor:pointer;" onclick="window.open('https://forms.gle/X7tViomB53Ae5UWh6', '_blank')">Solo Dance
+
+    
+</div>    <div class="event-desc">
+Own the spotlight, shine bright, each move fierce—unstoppable rhythm, pure heart, dance ignite!    </div>
+  </div>
+  <div class="event-card" onclick="alert('Drama!')">
+    <div class="event-icon">🎬 </div>
+<div class="event-title" role="button" tabindex="0" style="background:none; border:none; cursor:pointer;" onclick="window.open('https://forms.gle/X7tViomB53Ae5UWh6', '_blank')">Drama</div>    <div class="event-desc">
+Embrace the stage, live each role, speak truth, spark emotion, and leave hearts forever changed.
+    </div>
+  </div>
+</div>
+</body>
+</html>

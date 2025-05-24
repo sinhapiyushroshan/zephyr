@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZEPHYR 2025 - Event Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #ffd23f;
+      letter-spacing: 3px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #ffd23f;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ffffff;
+      border-bottom: 2px solid #ffd23f;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: rgba(0,0,0,0.65);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ffd23f;
+      text-shadow: 0 0 10px #ffd23f;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    ul.event-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    li.event-item {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(255, 65, 108, 0.4);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    li.event-item:hover {
+      transform: scale(1.03);
+    }
+
+    .event-btn {
+      display: inline-block;
+      background: #fff;
+      color: #ff416c;
+      font-weight: 700;
+      padding: 0.7rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .event-btn:hover {
+      background: #ffd23f;
+      color: #000;
+    }
+
+    footer {
+      background: #111;
+      color: #ffd23f;
+      text-align: center;
+      padding: 1rem;
+      margin-top: auto;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      main {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ZEPHYR</div>
+    <nav>
+      <ul>
+        <li><a href="ZEPHYR-homepage.html">Home</a></li>
+        <li><a href="#event-details" class="active">Event Details</a></li>
+        <li><a href="#contact-info">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="event-details">ZEPHYR 2025 - Event Details</h1>
+    <p>Welcome to ZEPHYR 2025 — Chaibasa Engineering College's annual fest. Dive into the excitement with these thrilling events!</p>
+
+    <ul class="event-list">
+      <li class="event-item">
+        <h3>🎮 Video Games</h3>
+        <p>Free Fire, PUBG, Subway Surfers & more</p>
+        <a href="videogame.html" class="event-btn">Join Now</a>
+      </li>
+      <li class="event-item">
+        <h3>🎤 Talent Showcase</h3>
+        <p>Rap Battles, Mushaira, Stand-up Comedy</p>
+        <a href="TALENT.html" class="event-btn">Show Talent</a>
+      </li>
+      <li class="event-item">
+        <h3>🧠 Quiz Contest</h3>
+        <p>Tech, engineering and brain-teasing questions</p>
+        <a href="quiz.html" class="event-btn">Take the Quiz</a>
+      </li>
+      <li class="event-item">
+        <h3>💃 Dance & Drama</h3>
+        <p>Lights, action and passion on stage</p>
+        <a href="dance.html" class="event-btn">Join the Show</a>
+      </li>
+      <li class="event-item">
+        <h3>🎨 Art & Photography</h3>
+        <p>Showcase your creativity and artistic vision</p>
+        <a href="art.html" class="event-btn">Submit Entry</a>
+      </li>
+      <li class="event-item">
+        <h3>🏃 Sports Meet</h3>
+        <p>Treasure Hunt, Scavenger Hunt, Escape Room</p>
+        <a href="sport.html" class="event-btn">Compete Now</a>
+      </li>
+      <li class="event-item">
+        <h3>✨ Whispers of ZEPHYR</h3>
+        <p>A memory lane — stories that last forever</p>
+        <a href="whispers.html" class="event-btn">Read Memories</a>
+      </li>
+    </ul>
+
+    <section id="contact-info">
+      <h2>📞 Contact Information</h2>
+      <p><strong>Event Coordinator:</strong> Mr. Piyush Roshan Sinha</p>
+      <p><strong>Email:</strong> <a href="mailto:ZEPHYR2024@chaibasaec.edu.in" style="color: #ffd23f;">ZEPHYR2024@chaibasaec.edu.in</a></p>
+      <p><strong>Phone:</strong> +91 78568 19240</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 ZEPHYR | Chaibasa Engineering College. All rights reserved.
+  </footer>
+</body>
+</html>

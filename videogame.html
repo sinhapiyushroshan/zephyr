@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>ZEPHYR 2025 - Video Games Event</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Montserrat:wght@400;700&display=swap');
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #eaeaea;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem 3rem;
+      text-align: center;
+    }
+
+    header {
+      width: 100%;
+      background: #1c1c3c;
+      padding: 1rem 1rem;
+      box-shadow: 0 4px 15px rgba(28, 28, 60, 0.8);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      user-select: none;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #ff007f;
+      letter-spacing: 5px;
+      text-shadow: 0 0 15px #ff007f;
+    }
+
+    main {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      margin-top: 2rem;
+      padding: 2rem 2rem 3rem;
+      box-shadow: 0 0 25px #ff007f33;
+      user-select: text;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ff007f;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      text-shadow: 0 0 10px #ff007f;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #d0d0e1;
+    }
+
+    .games-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .game-card {
+      background: #1e1e2f;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 0 15px #ff007f11;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      color: #fff;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .game-card:hover,
+    .game-card:focus {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #ff007fcc;
+      outline: none;
+    }
+
+    .game-image {
+      width: 150px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 8px #ff007faa);
+      transition: transform 0.3s ease;
+    }
+
+    .game-card:hover .game-image {
+      transform: scale(1.1);
+    }
+
+    .game-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #ff007f;
+      text-shadow: 0 0 8px #ff007fbb;
+    }
+
+    footer {
+      margin-top: auto;
+      width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+      color: #9999aa;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main {
+        padding: 1.5rem;
+      }
+      .game-image {
+        width: 120px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Video Games Event - ZEPHYR 2025</h1>
+  </header>
+
+  <main>
+    <h2>Join the Exciting Video Games Event</h2>
+    <p>Get ready to compete in some of the most thrilling games at ZEPHYR 2025! Whether you are a battle royale champion or a master of endless runner games, this event has something for everyone.</p>
+    
+    <div class="games-list" role="list" aria-label="List of video games in the event">
+      <article tabindex="0" class="game-card" role="listitem" aria-label="Free Fire game">
+        <img src="FF.jpg" alt="Free Fire Logo" class="game-image" />
+<button class="game-title" style="background: none; border: none; padding: 0; cursor: pointer;" onclick="window.location.href='https://forms.gle/X7tViomB53Ae5UWh6'">FREE FIRE</button>
+        <p>Fast-paced battle royale with team modes and aggressive gameplay.</p>
+      </article>
+
+      <article tabindex="0" class="game-card" role="listitem" aria-label="PUBG game">
+        <img src="PUBG.webp" alt="PUBG Logo" class="game-image" />
+<button class="game-title" style="background: none; border: none; padding: 0; cursor: pointer;" onclick="window.location.href='newpage.html'">PUBG Mobile</button>
+
+        <p>Legendary battle royale experience with strategy and survival skills.</p>
+      </article>
+
+      <article tabindex="0" class="game-card" role="listitem" aria-label="Subway Surfers game">
+        <img src="SUBWAY.jpg" alt="Subway Surfers Logo" class="game-image" />
+<button class="game-title" style="background: none; border: none; padding: 0; cursor: pointer;" onclick="window.location.href='newpage.html'">SUBWAY SURFERS</button>
+        <p>Endless runner game with vibrant graphics and fun obstacles.</p>
+      </article>
+
+      <article tabindex="0" class="game-card" role="listitem" aria-label="Call of Duty Mobile game">
+        <img src="COD.jpg" alt="Call of Duty Mobile Logo" class="game-image" />
+<button class="game-title" style="background: none; border: none; padding: 0; cursor: pointer;" onclick="window.location.href='newpage.html'">CALL OF DUTY MOBILE</button>
+        <p>Action-packed first-person shooter with multiple game modes.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 ZEPHYR - Chaibasa Engineering College. All rights reserved.
+  </footer>
+</body>
+</html>

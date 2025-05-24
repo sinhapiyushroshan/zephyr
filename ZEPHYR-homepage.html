@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>ZEPHYR 2024 - Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    body {
+      /* Gradient animated background */
+      background: linear-gradient(270deg, #0047ab, #540d6e, #ee4266, #ffd23f);
+      background-size: 800% 800%;
+      animation: gradientBackground 30s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    @keyframes gradientBackground {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .container {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      max-width: 700px;
+      box-shadow: 0 0 30px rgba(238, 66, 102, 0.7);
+      backdrop-filter: blur(12px);
+      user-select: none;
+    }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: 6px;
+      margin-bottom: 1.5rem;
+      text-shadow:
+        0 0 5px #ee4266,
+        0 0 15px #ee4266,
+        0 0 25px #ee4266,
+        0 0 35px #ee4266;
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: #ffd23f;
+      text-shadow: 0 0 8px #ffd23f;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      text-shadow: 0 0 6px rgba(0,0,0,0.3);
+    }
+    .btn-primary {
+      background: #ee4266;
+      color: white;
+      padding: 1rem 2.5rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 60px;
+      box-shadow:
+        0 6px 15px rgba(238, 66, 102, 0.7),
+        0 0 20px rgba(238, 66, 102, 0.6);
+      cursor: pointer;
+      transition: 
+        background-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+      user-select: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background: #ff5879;
+      box-shadow:
+        0 8px 20px rgba(255, 88, 121, 0.9),
+        0 0 25px rgba(255, 88, 121, 0.8);
+      transform: scale(1.05);
+      outline: none;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.8rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .btn-primary {
+        padding: 0.85rem 2rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Homepage introduction">
+    <h1>ZEPHYR 2025</h1>
+    <h2>Chaibasa Engineering College's Annual Fest</h2>
+    <p>Get ready to immerse yourself in an exhilarating celebration of talent, innovation, and excitement! Join us at ZEPHYR 2025 — where memories are made and legends come alive.</p>
+    <a href="ZEPHYR-info.html" class="btn-primary" role="button" aria-label="Discover more about ZEPHYR events and contact information">Discover More</a>
+  </div>
+</body>
+</html>

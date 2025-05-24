@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>ZEPHYR 2024 - Event Details</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #ee4266, #540d6e);
+      min-height: 100vh;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 3rem;
+    }
+    header {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+    }
+    .logo {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #ffd23f;
+      letter-spacing: 4px;
+      user-select: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #ffd23f;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      padding: 0.5rem 0;
+      border-radius: 6px;
+      transition: color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      color: #fff;
+      outline: none;
+    }
+    nav a.active {
+      border-bottom: 3px solid #fff;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    main {
+      background: rgba(0, 0, 0, 0.5);
+      margin: 3rem auto 0;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.7);
+      max-width: 900px;
+      padding: 2.5rem 2rem;
+      color: #fff;
+    }
+    h1, h2 {
+      color: #ffd23f;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 10px #ffd23f;
+    }
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      margin-bottom: 1.8rem;
+      text-align: center;
+    }
+    ul.event-list {
+      list-style: none;
+      padding-left: 1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+    }
+    ul.event-list li {
+      background: rgba(255, 210, 63, 0.15);
+      margin-bottom: 1rem;
+      padding: 0.9rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 0 10px rgba(255, 210, 63, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    ul.event-list li:hover,
+    ul.event-list li:focus {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 210, 63, 0.6);
+      outline: none;
+    }
+    footer {
+      margin-top: auto;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 1rem 0;
+      color: #ffd23f;
+      font-weight: 600;
+      user-select: none;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+    }
+    footer a {
+      color: #ffcc3f;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1.5rem 1rem;
+      }
+      ul.event-list {
+        max-width: 100%;
+        padding-left: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <div class="logo" tabindex="0" aria-label="ZEPHYR 2025 logo">ZEPHYR</div>
+      <nav role="navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="ZEPHYR-homepage.html" aria-label="Go to Home page">Home</a></li>
+          <li><a href="#event-details" class="active" aria-current="page">Event Details</a></li>
+          <li><a href="#contact-info" aria-label="Go to Contact Information section">Contact Information</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 id="event-details" tabindex="0">ZEPHYR 2025 - Event Details</h1>
+    <p>Welcome to ZEPHYR 2025, the spectacular college fest of Chaibasa Engineering College. Below are the exciting events planned for this year’s celebration. Prepare yourself to participate, compete, and enjoy!</p>
+
+    <ul class="event-list" role="list">
+      <li tabindex="0" style="list-style:none; margin-bottom:1rem;">
+  <a href="videogame.html" role="button" style="
+    display: inline-block;
+    background: #ee4266;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(238, 66, 102, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  " 
+  onmouseover="this.style.backgroundColor='#ff5879'; this.style.transform='scale(1.05)';" 
+  onmouseout="this.style.backgroundColor='#ee4266'; this.style.transform='scale(1)';"
+  >
+    Video Games
+  </a>
+  <p style="display:inline; margin-left: 1rem; font-weight: normal; color: #333;font-weight: bolder">Free-Fire , Pubg , Subway Sufers , ......etc.</p>
+</li>
+
+     <li tabindex="0" style="list-style:none; margin-bottom:1rem;">
+  <a href="TALENT.html" role="button" style="
+    display: inline-block;
+    background: #872f64;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  "
+  onmouseover="this.style.backgroundColor='#0056b3'; this.style.transform='scale(1.05)';"
+  onmouseout="this.style.backgroundColor='#007BFF'; this.style.transform='scale(1)';"
+  >
+    Talent Showcase
+  </a>
+  <p style="display:inline; margin-left: 1rem; font-weight: normal; color: #333;font-weight: bolder">
+   Rap battle , Mushaira , Stand - up , ..... etc.
+  </p>
+</li>
+<li tabindex="0" style="list-style:none; margin-bottom:1rem;">
+  <a href="quiz.html" role="button" style="
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  "
+  onmouseover="this.style.backgroundColor='#1e7e34'; this.style.transform='scale(1.05)';"
+  onmouseout="this.style.backgroundColor='#28a745'; this.style.transform='scale(1)';"
+  >
+     Quiz
+  </a>
+  <p style="display:inline; margin-left: 1rem; font-weight: normal; color: #333;font-weight: bolder">
+    Fast-paced quiz contest covering engineering and technology topics including ...etc..
+  </p>
+</li>
+
+     <li tabindex="0" style="list-style:none; margin-bottom:1rem;">
+  <a href="dance.html" role="button" style="
+    display: inline-block;
+    background: #fd7e14;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(253, 126, 20, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  "
+  onmouseover="this.style.backgroundColor='#e06c0a'; this.style.transform='scale(1.05)';"
+  onmouseout="this.style.backgroundColor='#fd7e14'; this.style.transform='scale(1)';"
+  >
+    Dance and Drama Competitions
+  </a>
+  <p style="display:inline; margin-left: 1rem; font-weight: normal; color: #333;font-weight: bolder">
+    Talent shows to showcase performing arts among students.
+  </p>
+</li>
+
+      <li tabindex="0" style="list-style:none; margin-bottom:1rem;">
+  <a href="art.html" role="button" style="
+    display: inline-block;
+    background: #6f42c1;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(111, 66, 193, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  "
+  onmouseover="this.style.backgroundColor='#5a32a3'; this.style.transform='scale(1.05)';"
+  onmouseout="this.style.backgroundColor='#6f42c1'; this.style.transform='scale(1)';"
+  >
+    Art & Photography
+  </a>
+  <p style="display:inline; margin-left: 1rem; font-weight: normal; color: #333;font-weight: bolder">
+    Creative competitions highlighting visual art and photography skills.
+  </p>
+</li>
+
+
+
+
+     <li tabindex="0" style="list-style:none; margin-bottom:1rem;">
+  <a href="sport.html" role="button" style="
+    display: inline-block;
+    background: #c33db1;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(111, 66, 193, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  "
+  onmouseover="this.style.backgroundColor='#5a32a3'; this.style.transform='scale(1.05)';"
+  onmouseout="this.style.backgroundColor='#6f42c1'; this.style.transform='scale(1)';"
+  >
+    Sports Meet
+  </a>
+  <p style="display:inline; margin-left: 1rem; font-weight: normal; color: #333; font-weight: bolder;">
+Treasure Hunt ,  Scavenger Hunt ,  Escape Room ,  Escape Room.  </p>
+</li>
+
+
+
+
+<li tabindex="0" style="list-style:none; margin-bottom:1rem;">
+  <a href="whispers.html" role="button" style="
+    display: inline-block;
+    background: #0776a6;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(111, 66, 193, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    user-select: none;
+  "
+  onmouseover="this.style.backgroundColor='#5a32a3'; this.style.transform='scale(1.05)';"
+  onmouseout="this.style.backgroundColor='#6f42c1'; this.style.transform='scale(1)';"
+  >
+    Whispers of ZEPHYR
+  </a>
+  <p style="display:inline; margin-left: 1rem; font-weight: normal; color: #333;font-weight: bolder">
+Memories which will last a lifetime.The ZEPHYR will mix in our blood and will be a great part of our life. 
+</p>
+</li>
+
+
+      
+    </ul>
+
+    <section id="contact-info" tabindex="0" aria-label="Contact Information Section">
+      <h2>Contact Information</h2>
+      <p>If you have any queries about ZEPHYR 2025 or want to participate, reach out to:</p>
+      <p><strong>Event Coordinator:</strong> Mr.Piyush roshan sinha</p>
+      <p><strong>Email:</strong> <a href="mailto:ZEPHYR2024@chaibasaec.edu.in" style="color:#ffd23f;">ZEPHYR2024@chaibasaec.edu.in</a></p>
+      <p><strong>Phone:</strong> +91 78568 19240</p>
+      <p>We look forward to seeing you at the event!</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 ZEPHYR | Chaibasa Engineering College | All rights reserved.
+  </footer>
+</body>
+</html>
